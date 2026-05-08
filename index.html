@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview de Banners HTML5</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .banner-card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+      text-align: center;
+    }
+
+    .banner-card h2 {
+      margin: 0 0 6px;
+      font-size: 20px;
+    }
+
+    .banner-card p {
+      margin: 0 0 16px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .banner-frame {
+      display: block;
+      border: 1px solid #ddd;
+      background: white;
+      overflow: hidden;
+    }
+
+    .banner-300x250 {
+      width: 300px;
+      height: 250px;
+    }
+
+    .banner-300x600 {
+      width: 300px;
+      height: 600px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin: 40px 0 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Preview de Banners HTML5</h1>
+    <p>Visualización para revisión de cliente</p>
+  </header>
+
+  <main>
+    <section class="grid">
+
+      <article class="banner-card">
+        <h2>Banner 300x250</h2>
+        <iframe
+          class="banner-frame banner-300x250"
+          src="300x250-ani.html"
+          width="300"
+          height="250"
+          scrolling="no">
+        </iframe>
+      </article>
+
+      <article class="banner-card">
+        <h2>Banner 300x600</h2>
+        <iframe
+          class="banner-frame banner-300x600"
+          src="300x600-ani.html"
+          width="300"
+          height="600"
+          scrolling="no">
+        </iframe>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    HTML5 Banner Preview
+  </footer>
+</body>
+</html>
