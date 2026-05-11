@@ -355,7 +355,23 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Capa_1
+	this.actionFrames = [159];
+	// timeline functions:
+	this.frame_159 = function() {
+		this.loopCount = this.loopCount || 0;
+		this.loopCount++;
+		
+		if(this.loopCount < 3){
+		    this.gotoAndPlay(0);
+		}else{
+		    this.stop();
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(159).call(this.frame_159).wait(14));
+
+	// borde
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f().s("#000000").ss(1,1,1).p("A3bzhMAu3AAAMAAAAnDMgu3AAAg");
 	this.shape.setTransform(150,125);
@@ -455,7 +471,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/300x250_ani_atlas_1.png", id:"300x250_ani_atlas_1"}
+		{src:"images/300x250_ani_atlas_1.png?1778507660566", id:"300x250_ani_atlas_1"}
 	],
 	preloads: []
 };
