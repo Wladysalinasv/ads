@@ -265,28 +265,6 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.logo, new cjs.Rectangle(-108.2,-48.5,216.5,97.1), null);
 
 
-(lib.fondo = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.fondo728();
-	this.instance.setTransform(-364,-45);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.fondo, new cjs.Rectangle(-364,-45,728,90), null);
-
-
 (lib.btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -319,6 +297,34 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.btn, new cjs.Rectangle(-54.7,-10,109.4,21), null);
+
+
+(lib.fondo = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_2
+	this.instance = new lib.sombra();
+	this.instance.setTransform(-243.55,0,0.4218,4.9872,90,0,0,0,0.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// fondo
+	this.instance_1 = new lib.fondo728();
+	this.instance_1.setTransform(-364,-45);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.fondo, new cjs.Rectangle(-553,-65.7,917,131.5), null);
 
 
 // stage content:
@@ -433,7 +439,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(352.4,43.6,387.30000000000007,799.1999999999999);
+p.nominalBounds = new cjs.Rectangle(157.3,22.2,582.4000000000001,820.5999999999999);
 // library properties:
 lib.properties = {
 	id: 'B2A4B6EAAEFE490DBD8D480946BBB087',
@@ -443,7 +449,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondo728.jpg?1778513445597", id:"fondo728"}
+		{src:"images/fondo728.jpg?1778513752635", id:"fondo728"}
 	],
 	preloads: []
 };
